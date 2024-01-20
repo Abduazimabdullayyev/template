@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Inconsolata', monospace;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.section-title {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    border-bottom: 1px solid #00000060;
+}
+
+nav {
+    padding: 5px 20px;
+    text-transform: capitalize;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    position: fixed;
+    box-shadow: 1px 1px 8px currentColor;
+    width: 100%;
+    z-index: 2;
+}
+
+nav a {
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    color: #000;
+}
+
+nav a:hover {
+    background-color: #d2d1d1;
+}
+
+nav ul {
+    display: flex;
+}
+
+#home {
+    background-image: url(../images/architect.jpg);
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.336);
+}
+
+#home .home-title {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.1rem;
+}
+
+.home-title span b {
+    background-color: #000000ad;
+    padding: 10px 15px;
+}
+
+#projects {
+    margin: 30px 50px;
+}
+
+#projects .image-content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.image-content .image {
+    width: 100%;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+}
+
+.image p {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+#about{
+    margin: 30px 50px
+}
+
+#about .cards{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.1rem;
+    margin-top: 20px;
+}
+
+.cards .card{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem ;
+}
+
+.cards .card  button{
+    background-color: #d2d1d1;
+    padding: 10px 20px;
+    border: none;
+}
+
+.cards .card img{
+    width: 100%;
+}
+
+.cards .card button:hover{
+    background-color: #c1c1c1;
+    color: #000;
+    cursor: pointer;
+}
+
+#contact{
+    margin: 50px 30px;
+    margin-bottom: 10px;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    margin-top:30px;
+}
+
+#contact form input{
+    padding: 10px 10px;
+    border: 1px solid #00000046;        
+}
+
+#contact button{
+    padding: 10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-family: none;
+}
+
+#contact button:hover{
+    background-color: #c1c1c1;
+    color: #000;
+}
+
+#contact .bg-img{
+    background-image: url(../images/map.jpg);
+    min-height: 100vh;
+    margin-top: 30px;
+}
+
+footer p{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    padding: 30px  0px;
+    font-family: none;
+}                  
+
+footer p a{
+    color: #fff;
+    text-decoration: underline;
+    font-family: none;
+}
